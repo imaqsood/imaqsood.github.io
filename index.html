@@ -4,9 +4,298 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Notable&family=Satisfy&display=swap" rel="stylesheet">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Maqsood Ahmad</title>
 </head>
-<body>
-  <h1> Under Construction </h1>
+<body class="text-black">
+  <!-- header -->
+  <div class="h-14 glass">
+    <div class="container flex md:hidden items-center">
+      <a href="#" class="p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>          
+      </a>
+    </div>
+    <div class="container md:flex mx-auto hidden">
+      <a href="#" class="p-4">HOME</a>
+      <a href="#" class="p-4">About</a>
+      <a href="#" class="p-4">Experience</a>
+      <a href="#" class="p-4">Contact</a>
+      <a href="#" class="p-4">Blog</a>
+    </div>
+  </div>
+  <!-- header -->
+
+  <!-- body -->
+  <div class="grid grid-cols-1 lg:grid-cols-[2fr_minmax(350px,1fr)] gap-2 p-1 md:p-4 mx-auto container">
+    <div class="relative grid md:grid-cols-[200px_auto] grid-cols-1 gap-8 items-start rounded-md leading-10 glass lg:col-span-2">
+      <div class="relative col-span-2 h-48 md:h-52">
+        <div class= " bg-white bg-title bg-cover bg-center top-0 w-full absolute rounded-md h-48 -z-10"></div>
+        <div class="filter-none max-md:justify-items-center absolute top-20 md:left-10 left-[calc(50%-4.5rem)]">
+          <img class="border-4 border-white rounded-full w-36 md:w-48 shadow-2xl" src="https://media.licdn.com/dms/image/v2/D4D03AQG5C7HKgZLXpQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700072404726?e=1736985600&v=beta&t=O1tItssM43KlYX_UrDKv2wuYdrbsgs9rhCqMdIrbY0o" alt="Maqsood">
+        </div>
+      </div>
+      <div class="md:p-10 p-4 col-span-2">
+        <p class="text-5xl font-extrabold max-md:text-center font-satisfy">Maqsood Ahmad</p>
+        <p class="text-md max-md:text-center">
+          <span class="font-bold">Senior Software Engineer</span>
+          @          
+          <span class="font-bold bg-yellow-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-puppet bg-20">
+            Puppet
+          </span>
+          by 
+          <a class="font-bold bg-gray-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-perforce bg-20">
+            PERFORCE
+          </a>
+        </p>
+        <p class="leading-6 font-satisfy shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100">
+          Experienced Software Developer who is passionate about writing clean, efficient, and generalized code
+          <input type="checkbox" id="read-more-toggle" class="hidden peer" />
+          <label for="read-more-toggle" class="cursor-pointer text-blue-500 underline peer-checked:hidden">
+            Read More
+          </label>
+          <span class="hidden peer-checked:inline opacity-0 peer-checked:opacity-100 transition-opacity duration-300 ease-in-out">
+            in a functional framework. Skilled in Ruby, Ruby on Rails, JavaScript, PostgreSQL and Devops, Strong engineering professional with a Bachelor of Engineering - BE focused in Computer Engineering from Mumbai University.
+          </span>
+          <label for="read-more-toggle" class="cursor-pointer text-blue-500 underline hidden peer-checked:inline">
+            Read Less
+          </label>
+        </p>
+        <p>
+          <a class="font-bold bg-pink-100 rounded-md shadow-md pl-6 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-ruby bg-16">Ruby</a> 
+          <a class="font-bold bg-yellow-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-python bg-20">Python</a>
+          <a class="font-bold bg-blue-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-python bg-20">DevOps</a> 
+        </p>
+      </div>
+    </div>
+    <div class="space-y-2">
+      <div class="rounded-md p-2 md:p-5 glass space-y-4">
+        <p class="font-bold text-xl flex items-center justify-between">
+          <span>Experience</span>
+          <span class="text-base font-normal">Total: 7 years, 7 months</span>
+        </p>
+        <div class="space-y-4">
+          <div class="flex space-x-2 md:space-x-4 relative">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md" src="https://media.licdn.com/dms/image/v2/C4E0BAQGhnGKrEjDgbg/company-logo_100_100/company-logo_100_100/0/1630605046756/perforce_logo?e=1740009600&v=beta&t=z8CV65R3Whn_Ki3FJ1Y10w3BWduNF5vdIlojMiSso2c" alt="">
+            </div>
+            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
+                <p class="w-full md:col-span-3 text-lg font-bold"> Senior Software Engineer </p>
+                <p class="w-full mr-4 font-semibold">Perforce Software</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100">Full Time</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Aug 2023 - Present</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> 1 yrs 4 mons </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Hybrid </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Pune, Maharashtra, India </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-2 md:space-x-4 relative">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md" src="https://media.licdn.com/dms/image/v2/D560BAQEPSDwcztk5_w/company-logo_100_100/company-logo_100_100/0/1730399356143/ltimindtree_logo?e=1740009600&v=beta&t=sOJXrcCfskxdc3-fBBd5AP-M98gOxRavQizI1utiT1g" alt="">
+            </div>
+            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
+                <p class="w-full md:col-span-3 text-lg font-bold"> Senior Software Engineer </p>
+                <p class="w-full mr-4 font-semibold">LTIMindtree</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100">Full Time</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Apr 2021 - Aug 2023</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> 2 yrs 5 mons </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Hybrid </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Mumbai, Maharashtra, India </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-2 md:space-x-4 relative">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md" src="https://media.licdn.com/dms/image/v2/C4D0BAQGh72Rrc18jjw/company-logo_100_100/company-logo_100_100/0/1648197854733/solbeg_logo?e=1740009600&v=beta&t=bF-Oo9fM6gWRO2NTO9yhAySABHudMcLCp76mRavP--U" alt="">
+            </div>
+            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
+                <p class="w-full md:col-span-3 text-lg font-bold"> Senior Software Engineer </p>
+                <p class="w-full mr-4 font-semibold"> SolbegSoft </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Full Time </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Jan 2020 - Mar 2021 </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> 1 yrs 3 mons </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> On-site </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Mumbai, Maharashtra, India </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-2 md:space-x-4">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md bg-white p-1" src="https://media.licdn.com/dms/image/v2/C510BAQHvd5X_IfCjaw/company-logo_100_100/company-logo_100_100/0/1630579502567/mirraw_logo?e=1740009600&v=beta&t=Y-x8aHhnrbmM14ENxwjz0TW-g5D9u3w1l28aDNniQZk" alt="">
+            </div>
+            <div class="space-y-2 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow"> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1 relative">              
+                <p class="w-full md:col-span-3 text-lg font-bold before:bg-white before:absolute before:left-[-51px] md:before:left-[-63px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> Mirraw.com </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100"> Full Time </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> July 2017 - Jan 2020 </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> 2 yrs 7 mons </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> On-site </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Mumbai, Maharashtra, India </p>
+              </div>
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1 relative">
+                <div class="absolute h-6 w-6 shadow-md border bg-white md:-left-[74px] -left-[61px] top-[2px] rounded-full"></div>              
+                <p class="w-full md:col-span-3 text-lg font-bold before:bg-white before:absolute before:left-[-51px] md:before:left-[-63px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> Software Developer L2 </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100"> July 2018 - Jan 2020 </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100"> 1 yr 7 mos </p>
+                <div class="md:col-span-3 space-y-2 flex flex-wrap" >
+                  <input type="checkbox" id="read-more-toggle-mirraw-s2" class="hidden peer" />
+                  <p class="w-[calc(100%-58px)] peer-checked:w-full overflow-hidden text-ellipsis line-clamp-1 peer-checked:line-clamp-none before:content-['➤'] before:left-0 ml-5 before:absolute"> Engineered a versatile product ranking system with AB testing, enhancing visibility (40-50%) and revenue using Solr, PostgreSQL, AWS S3, and Rails.</p>
+                  <label for="read-more-toggle-mirraw-s2" class="shrink-0 cursor-pointer text-blue-500 underline peer-checked:hidden">
+                    More
+                  </label>
+                  <div class="w-full space-y-2 hidden peer-checked:block opacity-0 peer-checked:opacity-100 transition-opacity duration-300 ease-in-out">
+                    <p class="before:content-['➤'] before:left-0 ml-5 before:absolute"> Designed and executed a Warehouse workflow (SOR), reducing delivery time by 20% with smart inventory management using Rails, S3, PostgreSQL, bootstrap, and JQuery.</p>
+                    <p class="before:content-['➤'] before:left-0 ml-5 before:absolute">Integrated onllinesales.ai’s Monetize product, enabling vendor product promotion through ads. This included order flow tracking, inventory feed generation, and OSA vendor panel integration using REST API, JS, and JWT authentication.</p>
+                    <p class="before:content-['➤'] before:left-0 ml-5 before:absolute">Developed marketing growth features using Ruby on Rails, CoffeeScript, Haml, PostgreSQL, RSpec, Solr. Optimized code and DB architectures, applying correct design patterns.</p>
+                    <p class="before:content-['➤'] before:left-0 ml-5 before:absolute">Led the warehouse inbound project, utilizing Django Rest Framework, PyQt, Celery. Setup Raspberry Pi and deployed on Heroku.</p>
+                  </div>
+                  <label for="read-more-toggle-mirraw-s2" class="ml-5 cursor-pointer text-blue-500 underline hidden peer-checked:inline">
+                    Read Less
+                  </label>
+                </div>
+              </div>
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1 relative">              
+                <div class="absolute h-6 w-6 shadow-md border bg-white md:-left-[74px] -left-[61px]  top-[2px] rounded-full"></div>
+                <p class="w-full md:col-span-3 text-lg font-bold before:bg-white before:absolute before:left-[-51px] md:before:left-[-63px] before:top-[20px] before:-z-10 before:h-[calc(100%+20px)] before:w-[3px] before:content-['']">
+                  Software Developer
+                </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100"> July 2017 - July 2018 </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100"> 1 yr 1 mos </p>
+                <div class="md:col-span-3 space-y-2 flex flex-wrap" >
+                  <input type="checkbox" id="read-more-toggle-mirraw-s1" class="hidden peer" />
+                  <p class="w-[calc(100%-58px)] peer-checked:w-full overflow-hidden text-ellipsis line-clamp-1 peer-checked:line-clamp-none before:content-['➤'] before:left-0 ml-5 before:absolute"> Integrated Atlantic shipper API for automated international shipment generation, achieving a 50% increase. Utilized SOAP API and Ruby Rack-based auto-tracking.</p>
+                  <label for="read-more-toggle-mirraw-s1" class="shrink-0 cursor-pointer text-blue-500 underline peer-checked:hidden">
+                    More
+                  </label>
+                  <div class="w-full space-y-2 hidden peer-checked:block opacity-0 peer-checked:opacity-100 transition-opacity duration-300 ease-in-out">
+                    <p class="before:content-['➤'] before:left-0 ml-5 before:absolute">Overhauled the tailoring process, redesigning PostgresSQL DB architecture and Ruby code for an optimized, expandable, and adaptable system.</p>
+                    <p class="before:content-['➤'] before:left-0 ml-5 before:absolute">Created a framework for efficient download of large files with smart pooling mechanism. Utilized JQuery Ajax, RoR, Bootstrap to enable seamless handling of big CSV and PDF downloads.</p>
+                    <p class="before:content-['➤'] before:left-0 ml-5 before:absolute">Developed and implemented an invoicing system handling various currencies and tax calculations. Included S3, PDF, and CSV integration for seamless invoicing process.</p>
+                  </div>
+                  <label for="read-more-toggle-mirraw-s1" class="ml-5 cursor-pointer text-blue-500 underline hidden peer-checked:inline">
+                    Read Less
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-2 md:space-x-4 relative">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md bg-white p-1" src="https://media.licdn.com/dms/image/v2/C510BAQG_mmlrUfjUVg/company-logo_100_100/company-logo_100_100/0/1631405400220?e=1740009600&v=beta&t=fv0zBLIO4zDyh4yfePIFm3PudzHuGCbok9RQ78d2WOo" alt="">
+            </div>
+            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
+                <p class="w-full md:col-span-3 text-lg font-bold"> Software Developer </p>
+                <p class="w-full mr-4 font-semibold"> Flixmates </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Full Time </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> May 2017 - Jul 2017 </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> 3 mons </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> On-site </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Mumbai, Maharashtra, India </p>
+              </div>
+              <div class="md:col-span-3 space-y-2 flex flex-wrap relative" >
+                <input type="checkbox" id="read-more-toggle-flexmates-s1" class="hidden peer" />
+                <p class="w-[calc(100%-58px)] peer-checked:w-full overflow-hidden text-ellipsis line-clamp-1 peer-checked:line-clamp-none before:content-['➤'] before:left-0 ml-5 before:absolute"> Initial project setup and worked on User Gallery, supporting both video and images.</p>
+                <label for="read-more-toggle-flexmates-s1" class="shrink-0 cursor-pointer text-blue-500 underline peer-checked:hidden">
+                  More
+                </label>
+                <label for="read-more-toggle-flexmates-s1" class="ml-5 cursor-pointer text-blue-500 underline hidden peer-checked:inline">
+                  Read Less
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-2 md:space-x-4 relative">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md bg-white p-1" src="https://media.licdn.com/dms/image/v2/C4D0BAQHvB2m5aTd4qQ/company-logo_100_100/company-logo_100_100/0/1631352718639?e=1740009600&v=beta&t=PY_g6XOe8aP5Ck6BQEafM4D33YUSZ57NQXCt3GNl3F4" alt="">
+            </div>
+            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow "> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
+                <p class="w-full md:col-span-3 text-lg font-bold"> Desktop Engineer </p>
+                <p class="w-full mr-4 font-semibold"> Apexcel Informatics Pvt. Ltd </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Full Time </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> May 2014 - Jun 2014 </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> 2 mons </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> On-site </p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Mumbai, Maharashtra, India </p>
+              </div>
+              <div class="md:col-span-3 space-y-2 flex flex-wrap relative" >
+                <input type="checkbox" id="read-more-toggle-apexcel-s1" class="hidden peer" />
+                <p class="w-[calc(100%-58px)] peer-checked:w-full overflow-hidden text-ellipsis line-clamp-1 peer-checked:line-clamp-none before:content-['➤'] before:left-0 ml-5 before:absolute">
+                  Worked on the LIC project with the HCL team. It was a networking-related job. We have to connect all LIC PCs to the LIC domain and configure Network settings.
+                </p>
+                <label for="read-more-toggle-apexcel-s1" class="shrink-0 cursor-pointer text-blue-500 underline peer-checked:hidden">
+                  More
+                </label>
+                <label for="read-more-toggle-apexcel-s1" class="ml-5 cursor-pointer text-blue-500 underline hidden peer-checked:inline">
+                  Read Less
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-md p-2 md:p-5 glass space-y-4">
+        <p class="font-bold text-xl flex items-center justify-between">
+          <span>Education</span>
+          <span class="text-base font-normal"></span>
+        </p>
+        <div class="space-y-4">
+          <div class="flex space-x-2 md:space-x-4 relative">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md p-1 bg-white" src="/img/mhss.png" alt="">
+            </div>
+            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
+                <p class="w-full md:col-span-3 text-lg font-bold"> M.H. Saboo Siddik College Of Engineering •</p>
+                <p class="w-full md:col-span-3 text-lg font-bold ">
+                  <span class=" bg-mu bg-28 bg-[0px_center]  pl-8 bg-no-repeat py-2">University of Mumbai</span>
+                </p>
+                <p class="w-full mr-4 font-semibold md:col-span-3">BE Computer Engineering</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100">2014 - 2017</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100">Grade: 8.24/10</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Mumbai, Maharashtra, India </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-2 md:space-x-4 relative">
+            <div class="rounded-lg w-14 md:w-16 shrink-0">
+              <img class="rounded-xl shadow-md p-1 bg-white filter grayscale" src="/img/mhss.png" alt="">
+            </div>
+            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow "> 
+              <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
+                <p class="w-full md:col-span-3 text-lg font-bold"> M. H. Saboo Siddik Polytechnic •</p>
+                <p class="w-full md:col-span-3 text-lg font-bold ">
+                  <span class=" bg-msbte bg-28 bg-[0px_center] pl-9 bg-no-repeat py-2">Maharashtra State Board of Technical Education</span>
+                </p>
+                <p class="w-full mr-4 font-semibold md:col-span-3">Diploma Computer Engineering</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100">2012 - 2014</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100">Grade: 77.10%</p>
+                <p class="max-w-fit shadow-sm border text-sm rounded-full px-2 border-gray-400 bg-gray-100"> Mumbai, Maharashtra, India </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-md p-2 md:p-5 glass space-y-4">
+      <div class="">
+      </div>
+    </div>
+  </div>
 </body>
 </html>

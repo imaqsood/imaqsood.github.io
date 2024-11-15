@@ -1,0 +1,15 @@
+{
+  "name": "imaqsood.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:imaqsood/imaqsood.github.io.git",
+  "author": "Maqsood <maqsood.ulde@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}

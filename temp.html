@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqsood Ahmad Ulde - Resume</title>
+
+    <!-- Google Fonts: Ubuntu Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --scale-factor: calc(100vw / 794);
+        }
+        /* Apply Ubuntu Sans Font */
+        body {
+            font-family: 'Ubuntu Sans', sans-serif;
+            background: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            overflow: auto; /* Allow scrolling */
+        }
+
+        /* A4 Size in Pixels (210mm × 297mm = 794px × 1123px) */
+        .resume-wrapper {
+            width: 210mm;
+            height: 297mm;
+            position: relative;
+            margin: auto;
+            transform-origin: top left;
+        }
+
+        .resume-container {
+            width: 100%;
+            height: 100%;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20mm;
+            overflow: hidden;
+        }
+
+        /* Dynamically Scale for Smaller Screens */
+        @media screen {
+            .resume-wrapper {
+                transform: scale(var(--scale-factor));
+            }
+        }
+
+        /* Ensure Exact A4 Print */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            body {
+                background: white;
+                overflow: hidden;
+            }
+
+            .resume-wrapper {
+                width: 210mm;
+                height: 297mm;
+                transform: none;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 10mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Resume Wrapper (No Flexbox) -->
+    <div class="resume-wrapper">
+        <div class="resume-container bg-white text-black font-[Ubuntu_Sans] overflow-hidden">
+            <h1 class="text-3xl font-bold text-center">Maqsood Ahmad Ulde</h1>
+            <p class="text-lg text-center text-gray-600">Senior Software Engineer</p>
+            <hr class="my-4">
+
+            <h2 class="text-xl font-semibold text-teal-600">Work Experience</h2>
+            <p class="text-gray-800 font-medium">Perforce (08/2023 - Present)</p>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Deployed Puppet agents for OSes like Ubuntu, MacOS, RedHat.</li>
+                <li>Automated testing with Jenkins for seamless integration.</li>
+                <li>Patched and resolved bug fixes in OpenSSL.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

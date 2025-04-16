@@ -9,22 +9,39 @@
 
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Maqsood Ahmad</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="text-black">
+<body class="text-black scroll-smooth">
   <!-- header -->
-  <div class="h-14 glass">
-    <div class="container flex md:hidden items-center">
-      <a href="#" class="p-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>          
-      </a>
-    </div>
+  <div class="h-14 glass fixed top-0 left-0 right-0 z-10">
+    <details class="md:hidden">
+      <summary class="container flex items-center">
+        <div class="p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>          
+        </div>
+      </summary>
+      <ul class="container md:flex mx-auto glass">
+        <a href="/" class="p-4 block">HOME</a>
+        <a href="/resume.pdf" class="p-4 block">Resume</a>
+        <a href="#" class="p-4 block">About</a>
+        <a href="#experience" class="p-4 block">Experience</a>
+        <a href="#education" class="p-4 block">Education</a>
+        <a href="#" class="p-4 block">Contact</a>
+        <a href="#" class="p-4 block">Blog</a>
+      </ul>
+  .  </details>
     <div class="container md:flex mx-auto hidden">
       <a href="/" class="p-4">HOME</a>
       <a href="/resume.pdf" class="p-4">Resume</a>
       <a href="#" class="p-4">About</a>
-      <a href="#" class="p-4">Experience</a>
+      <a href="#experience" class="p-4">Experience</a>
+      <a href="#education" class="p-4">Education</a>
       <a href="#" class="p-4">Contact</a>
       <a href="#" class="p-4">Blog</a>
     </div>
@@ -32,24 +49,23 @@
   <!-- header -->
 
   <!-- body -->
-  <div class="grid grid-cols-1 lg:grid-cols-[2fr_minmax(350px,1fr)] gap-2 p-1 md:p-4 mx-auto container">
-    <div class="relative grid md:grid-cols-[200px_auto] grid-cols-1 gap-8 items-start rounded-md leading-10 glass c">
-      <div class="relative col-span-2 h-48 md:h-52">
-        <div class= " bg-white bg-title bg-cover bg-center top-0 w-full absolute rounded-md h-48 -z-10"></div>
-        <div class="filter-none max-md:justify-items-center absolute top-20 md:left-10 left-[calc(50%-4.5rem)]">
-          <img class="border-4 border-white rounded-full w-36 md:w-48 shadow-2xl" src="img/profile.jpeg" alt="Maqsood">
+  <div class="grid grid-cols-1 lg:grid-cols-[2fr_minmax(350px,1fr)] grid-rows-[calc(100vh-68px)] gap-2 md:px-4 md:pt-0 mx-auto container mt-[57px]">
+    <div class="grid grid-cols-1 gap-20 items-start rounded-md leading-10 glass self-center justify-self-center max-w-[790px] col-span-1 lg:col-span-2">
+      <div class="">
+        <div class= " bg-white bg-title bg-cover bg-center rounded-md">
+          <img class="relative top-20 left-[calc(50%-6rem)] border-4 border-white rounded-full w-48 lg:w-48 lg:left-20 md: shadow-2xl" src="img/profile.jpeg" alt="Maqsood">
         </div>
       </div>
-      <div class="md:p-10 p-4 col-span-2">
+      <div class="md:p-10 p-4">
         <p class="text-5xl font-extrabold max-md:text-center font-satisfy">Maqsood Ahmad</p>
         <p class="text-md max-md:text-center">
           <span class="font-bold">Senior Software Engineer</span>
           @          
-          <span class="font-bold bg-yellow-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-puppet bg-20">
+          <span class="font-bold bg-yellow-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-puppet bg-size-[auto_16px]">
             Puppet
           </span>
           by 
-          <a class="font-bold bg-gray-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-perforce bg-20">
+          <a class="font-bold bg-gray-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-perforce bg-size-[auto_16px]">
             PERFORCE
           </a>
         </p>
@@ -66,22 +82,22 @@
             Read Less
           </label>
         </p>
-        <p>
-          <a class="font-bold bg-pink-100 rounded-md shadow-md pl-6 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-ruby bg-16">Ruby</a> 
-          <a class="font-bold bg-yellow-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-python bg-20">Python</a>
-          <a class="font-bold bg-blue-100 rounded-md shadow-md pl-7 bg-no-repeat bg-[5px_center] p-1 mx-1 bg-python bg-20">DevOps</a> 
+        <p class="space-x-2 mt-2">
+          <a class="font-bold bg-pink-100 rounded-md shadow-md pl-6 bg-no-repeat bg-[5px_center] p-1 leading-0  bg-ruby bg-size-[auto_16px]">Ruby</a> 
+          <a class="font-bold bg-yellow-100 rounded-md shadow-md pl-6 bg-no-repeat bg-[5px_center] p-1 leading-0  bg-python bg-size-[auto_16px]">Python</a>
+          <a class="font-bold bg-blue-100 rounded-md shadow-md pl-10.5 bg-no-repeat bg-[5px_center] p-1 leading-0  bg-devops bg-size-[auto_16px]">DevOps</a> 
         </p>
       </div>
     </div>
-    <div class="rounded-md p-2 md:p-5 glass space-y-4">
+    <!-- <div class="rounded-md p-2 md:p-5 glass space-y-4">
       <div class="">
       </div>
-    </div>
-    <div class="space-y-2">
+    </div> -->
+    <div id="experience" class="space-y-2 scroll-mt-20">
       <div class="rounded-md p-2 md:p-5 glass space-y-4">
         <p class="font-bold text-xl flex items-center justify-between">
           <span>Experience</span>
-          <span class="text-base font-normal">Total: 7 years, 7 months</span>
+          <span class="text-base font-normal">Total: 9 years </span>
         </p>
         <div class="space-y-4">
           <div class="flex space-x-2 md:space-x-4 relative">
@@ -96,7 +112,7 @@
               </svg>
             </div>
             </div>
-            <div class="space-y-1 shadow-sm border rounded-md p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
+            <div class="space-y-1 shadow-sm border rounded-3xl rounded-tl-none p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
               <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
                 <p class="w-full md:col-span-3 text-lg font-bold"> Senior Software Engineer </p>
                 <p class="w-full mr-4 font-semibold">Perforce Software</p>
@@ -224,7 +240,7 @@
 
           <div class="flex space-x-2 md:space-x-4 relative">
             <div class="rounded-lg w-14 md:w-16 shrink-0">
-              <img class="rounded-xl shadow-md bg-white p-1" src="https://media.licdn.com/dms/image/v2/C510BAQG_mmlrUfjUVg/company-logo_100_100/company-logo_100_100/0/1631405400220?e=1740009600&v=beta&t=fv0zBLIO4zDyh4yfePIFm3PudzHuGCbok9RQ78d2WOo" alt="">
+              <img class="rounded-xl shadow-md bg-white p-2" src="/img/flexmate.svg" alt="">
             </div>
             <div class="space-y-1 shadow-sm border rounded-3xl rounded-tl-none p-3 border-gray-400 bg-gray-100 grow before:bg-white before:absolute before:left-[26px] md:before:left-[30px] before:top-[20px] before:-z-10 before:h-full before:w-[3px] before:content-['']"> 
               <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
@@ -251,7 +267,7 @@
 
           <div class="flex space-x-2 md:space-x-4 relative">
             <div class="rounded-lg w-14 md:w-16 shrink-0">
-              <img class="rounded-xl shadow-md bg-white p-1" src="https://media.licdn.com/dms/image/v2/C4D0BAQHvB2m5aTd4qQ/company-logo_100_100/company-logo_100_100/0/1631352718639?e=1740009600&v=beta&t=PY_g6XOe8aP5Ck6BQEafM4D33YUSZ57NQXCt3GNl3F4" alt="">
+              <img class="rounded-xl shadow-md bg-white p-1" src="/img/apexcel.jpeg" alt="">
             </div>
             <div class="space-y-1 shadow-sm border rounded-3xl rounded-tl-none p-3 border-gray-400 bg-gray-100 grow "> 
               <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
@@ -279,7 +295,7 @@
           </div>
         </div>
       </div>
-      <div class="rounded-md p-2 md:p-5 glass space-y-4">
+      <div id="education" class="rounded-md p-2 md:p-5 glass space-y-4">
         <p class="font-bold text-xl flex items-center justify-between">
           <span>Education</span>
           <span class="text-base font-normal"></span>
@@ -293,7 +309,7 @@
               <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
                 <p class="w-full md:col-span-3 text-lg font-bold"> M.H. Saboo Siddik College Of Engineering •</p>
                 <p class="w-full md:col-span-3 text-lg font-bold ">
-                  <span class=" bg-mu bg-28 bg-[0px_center]  pl-8 bg-no-repeat py-2">University of Mumbai</span>
+                  <span class=" bg-mu bg-size-[28px] bg-[0px_center]  pl-8 bg-no-repeat py-2">University of Mumbai</span>
                 </p>
                 <p class="w-full mr-4 font-semibold md:col-span-3">BE Computer Engineering</p>
                 <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100">2014 - 2017</p>
@@ -311,7 +327,7 @@
               <div class="flex flex-wrap md:grid md:grid-cols-[auto_auto_auto] md:items-center md:justify-start gap-1">              
                 <p class="w-full md:col-span-3 text-lg font-bold"> M. H. Saboo Siddik Polytechnic •</p>
                 <p class="w-full md:col-span-3 text-lg font-bold ">
-                  <span class=" bg-msbte bg-28 bg-[0px_center] pl-9 bg-no-repeat py-2">Maharashtra State Board of Technical Education</span>
+                  <span class=" bg-msbte bg-size-[28px] bg-[0px_center] pl-9 bg-no-repeat py-2">Maharashtra State Board of Technical Education</span>
                 </p>
                 <p class="w-full mr-4 font-semibold md:col-span-3">Diploma Computer Engineering</p>
                 <p class="max-w-fit shadow-sm border text-sm rounded-full px-2  border-gray-400 bg-gray-100">2012 - 2014</p>

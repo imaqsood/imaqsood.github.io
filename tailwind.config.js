@@ -3,11 +3,6 @@ module.exports = {
   content: ["./index.html" ],
   theme: {
     extend: {
-      fontFamily: {
-        satisfy: ['Satisfy', 'cursive'],
-        'great-vibes': ["Great Vibes", 'cursive'],
-        notable:["Notable", 'sans-serif'],
-      },
       backgroundImage: {
         'ruby': "url('https://www.ruby-lang.org/images/header-ruby-logo@2x.png')",
         'python': "url(https://banner2.cleanpng.com/20190623/yp/kisspng-python-computer-icons-programming-language-executa-1713885634631.webp)",

@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./resume.html'], // ✅ Make sure this path is correct
+  content: ['./resume.html', './mahi_resume.html'], // ✅ Make sure this path is correct
   theme: {
     extend: {},
   },

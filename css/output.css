@@ -246,6 +246,9 @@
   .right-0 {
     right: 0px;
   }
+  .-left-\[58px\] {
+    left: calc(58px * -1);
+  }
   .-left-\[61px\] {
     left: calc(61px * -1);
   }
@@ -1089,22 +1092,6 @@
     content: var(--tw-content);
     z-index: calc(10 * -1);
   }
-  .before\:h-\[calc\(\)\]::before {
-    content: var(--tw-content);
-    height: calc();
-  }
-  .before\:h-\[calc\(100\%\)\]::before {
-    content: var(--tw-content);
-    height: calc(100%);
-  }
-  .before\:h-\[calc\(100\%\+\)\]::before {
-    content: var(--tw-content);
-    height: calc(100% + );
-  }
-  .before\:h-\[calc\(100\%\+8\)\]::before {
-    content: var(--tw-content);
-    height: calc(100% + 8);
-  }
   .before\:h-\[calc\(100\%\+8px\)\]::before {
     content: var(--tw-content);
     height: calc(100% + 8px);
@@ -1124,14 +1111,6 @@
   .before\:h-\[calc\(100\%-102px\)\]::before {
     content: var(--tw-content);
     height: calc(100% - 102px);
-  }
-  .before\:h-\[calc\(100\)\]::before {
-    content: var(--tw-content);
-    height: calc(100);
-  }
-  .before\:h-\[calc\]::before {
-    content: var(--tw-content);
-    height: calc;
   }
   .before\:h-full::before {
     content: var(--tw-content);

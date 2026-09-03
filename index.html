@@ -29,7 +29,7 @@
       <ul class="container md:flex mx-auto glass">
         <a href="/" class="p-4 block">Home</a>
         <a href="/Maqsood - Platform Engineering.pdf" class="p-4 block">Resume</a>
-        <a href="#" class="p-4 block">About</a>
+        <a href="#about" class="p-4 block">About</a>
         <a href="#experience" class="p-4 block">Experience</a>
         <a href="#education" class="p-4 block">Education</a>
         <a href="https://forms.gle/YxHrX8SYKTwPUdQq9" class="p-4 block">Contact</a>
@@ -39,7 +39,7 @@
     <div class="container md:flex mx-auto hidden">
       <a href="/" class="p-4">Home</a>
       <a href="/Maqsood - Platform Engineering.pdf" class="p-4">Resume</a>
-      <a href="#" class="p-4">About</a>
+      <a href="#about" class="p-4">About</a>
       <a href="#experience" class="p-4">Experience</a>
       <a href="#education" class="p-4">Education</a>
       <a href="https://forms.gle/YxHrX8SYKTwPUdQq9" class="p-4 block">Contact</a>
@@ -69,7 +69,7 @@
             PERFORCE
           </a>
         </p>
-        <p class="leading-6 font-satisfy shadow-sm border rounded-md p-3 mt-2 border-gray-400 bg-gray-100">
+        <p class="leading-6 font-satisfy shadow-sm border rounded-lg p-3 mt-2 border-gray-200 bg-gray-100">
           I’m a Senior Software Engineer working across Ruby on Rails, platform engineering, cloud, DevOps, and AI
           <input type="checkbox" id="read-more-toggle" class="hidden peer" />
           <label for="read-more-toggle" class="cursor-pointer text-blue-500 underline peer-checked:hidden">
@@ -102,10 +102,36 @@
         </div>
       </div>
     </div>
-    <!-- <div class="rounded-md p-2 md:p-5 glass space-y-4">
-      <div class="">
+    <div id="about" class="space-y-2 scroll-mt-20 lg:col-span-2 max-w-[900px] justify-self-center">
+      <div class="rounded-md p-2 md:p-5 glass space-y-4">
+        <p class="font-bold text-xl flex items-center justify-between">
+          <span>About</span>
+          <p class="leading-6  shadow-sm border rounded-lg p-3 mt-2 border-gray-400 bg-gray-100">
+            Platform engineer with 9+ years of experience. I build the infrastructure, tooling, and systems that other engineers ship on.
+            <input type="checkbox" id="about-read-more-toggle" class="hidden peer" />
+            <label for="about-read-more-toggle" class="cursor-pointer text-blue-500 underline peer-checked:hidden">
+              Read More
+            </label>
+            <span class="hidden peer-checked:inline opacity-0 peer-checked:opacity-100 transition-opacity duration-300 ease-in-out">
+              <br><br>
+              At Perforce, I drive build, test, and release engineering for Puppet Agent and Puppet Runtime, core components of an infrastructure automation platform used by 40,000+ organizations worldwide. My scope spans Agent, Core, Modules, Forge, and build tooling from multi-OS CI and cross-platform packaging to Kubernetes-based test infrastructure on AWS and low-level debugging across Ruby, C++, system libraries, and operating systems.
+              <br><br>
+              I also build AI-assisted engineering tools using LLMs, Claude Code, and MCP, automating repetitive workflows and integrating AI into testing, debugging, and release engineering.
+              <br><br>
+              Previously, I built production systems at MSCI, Solbeg, and Mirraw, working across Kubernetes/Azure, multi-tenant SaaS, large-scale data platforms, production framework migrations, and performance-critical systems using PostgreSQL, Oracle, Solr, and Ruby on Rails.
+              <br><br>
+              Platform Engineering · Release Engineering · Kubernetes · AWS · Terraform · CI/CD · Ruby · Python · C/C++ · AI Engineering
+              <br><br>
+              Open-source contributor to Puppet and multiple Ruby gems. Based in Mumbai.
+            </span>
+            <br>
+            <label for="about-read-more-toggle" class="cursor-pointer text-blue-500 underline hidden peer-checked:inline">
+              Read Less
+            </label>
+          </p>
+        </p>
       </div>
-    </div> -->
+    </div>
     <div id="experience" class="space-y-2 scroll-mt-20 lg:col-span-2 max-w-[900px] justify-self-center">
       <div class="rounded-md p-2 md:p-5 glass space-y-4">
         <p class="font-bold text-xl flex items-center justify-between">

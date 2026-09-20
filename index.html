@@ -17,32 +17,32 @@
 </head>
 <body class="text-black scroll-smooth font-inter">
   <!-- header -->
-  <div class="h-14 glass fixed top-0 left-0 right-0 z-10">
-    <details class="md:hidden">
-      <summary class="container flex items-center">
+  <div class="h-14 glass fixed top-0 left-0 right-0 z-50">
+    <details id="mobile-menu" class="md:hidden">
+      <summary class="container flex items-center cursor-pointer list-none [&::-webkit-details-marker]:hidden" aria-label="Toggle navigation menu">
         <div class="p-4">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>          
+          </svg>
         </div>
       </summary>
-      <ul class="container md:flex mx-auto glass">
-        <a href="/" class="p-4 block">Home</a>
-        <a href="/Maqsood - Platform Engineering.pdf" class="p-4 block">Resume</a>
-        <a href="#about" class="p-4 block">About</a>
-        <a href="#experience" class="p-4 block">Experience</a>
-        <a href="#education" class="p-4 block">Education</a>
-        <a href="https://forms.gle/YxHrX8SYKTwPUdQq9" class="p-4 block">Contact</a>
-        <!-- <a href="#" class="p-4 block">Blog</a> -->
+      <ul class="container mx-auto absolute top-14 left-0 right-0 bg-white/95 border-t border-white/40 shadow-lg text-gray-900">
+        <li><a href="/" class="p-4 block">Home</a></li>
+        <li><a href="/Maqsood - Platform Engineering.pdf" class="p-4 block">Resume</a></li>
+        <li><a href="#about" class="p-4 block">About</a></li>
+        <li><a href="#experience" class="p-4 block">Experience</a></li>
+        <li><a href="#education" class="p-4 block">Education</a></li>
+        <li><a href="https://forms.gle/YxHrX8SYKTwPUdQq9" class="p-4 block">Contact</a></li>
+        <!-- <li><a href="#" class="p-4 block">Blog</a></li> -->
       </ul>
-  .  </details>
+    </details>
     <div class="container md:flex mx-auto hidden">
       <a href="/" class="p-4">Home</a>
       <a href="/Maqsood - Platform Engineering.pdf" class="p-4">Resume</a>
       <a href="#about" class="p-4">About</a>
       <a href="#experience" class="p-4">Experience</a>
       <a href="#education" class="p-4">Education</a>
-      <a href="https://forms.gle/YxHrX8SYKTwPUdQq9" class="p-4 block">Contact</a>
+      <a href="https://forms.gle/YxHrX8SYKTwPUdQq9" class="p-4">Contact</a>
       <!-- <a href="#" class="p-4">Blog</a> -->
     </div>
   </div>
@@ -423,7 +423,7 @@
           </div>
         </div>
       </div>
-      <div id="education" class="rounded-md p-2 md:p-5 glass space-y-4">
+      <div id="education" class="rounded-md p-2 md:p-5 glass space-y-4 scroll-mt-20">
         <p class="font-bold text-xl flex items-center justify-between">
           <span>Education</span>
           <span class="text-base font-normal"></span>
@@ -474,5 +474,19 @@
       </div>
     </div> -->
   </div>
+
+  <script>
+    // Close the mobile menu after picking a link, clicking outside, or pressing Escape
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.open = false);
+    });
+    document.addEventListener('click', e => {
+      if (mobileMenu.open && !mobileMenu.contains(e.target)) mobileMenu.open = false;
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') mobileMenu.open = false;
+    });
+  </script>
 </body>
 </html>
